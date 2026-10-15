@@ -1,0 +1,14 @@
+#Visual Studio
+.vs/
+
+#CMake generated builds
+out/
+build/
+
+#Local CMake preferences
+CMakeUserPresets.json
+
+#Compiled binaries and intermediate files
+*.exe
+*.obj
+*.pdb
