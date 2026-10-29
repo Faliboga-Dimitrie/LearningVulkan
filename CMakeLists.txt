@@ -1,28 +1,22 @@
 cmake_minimum_required(VERSION 3.21)
-
 project(LearningVulkan LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(
-    mem_01_01
-    cpp/MEM_objects_memory/01_objects_storage/mem_01_01_objects.cpp
-)
+function(add_exercise target source)
+    add_executable(${target} "${source}")
 
- add_executable(
-    mem_01_02
-    cpp/MEM_objects_memory/01_objects_storage/mem_01_02_objects.cpp
-)
+    if(MSVC)
+        target_compile_options(${target} PRIVATE /W4 /permissive-)
+    endif()
+endfunction()
 
-add_executable(
-    mem_01_03
-    cpp/MEM_objects_memory/01_objects_storage/mem_01_03_optimization.cpp
-)
+add_exercise(mem_01_01 cpp/MEM_objects_memory/01_objects_storage/mem_01_01_objects.cpp)
+add_exercise(mem_01_02 cpp/MEM_objects_memory/01_objects_storage/mem_01_02_objects.cpp)
+add_exercise(mem_01_03 cpp/MEM_objects_memory/01_objects_storage/mem_01_03_optimization.cpp)
+add_exercise(mem_01_04 cpp/MEM_objects_memory/01_objects_storage/mem_01_04_storage_durations.cpp)
+add_exercise(mem_01_05 cpp/MEM_objects_memory/01_objects_storage/mem_01_05_scope_storage_lifetime.cpp)
 
-if(MSVC)
-    target_compile_options(mem_01_01 PRIVATE /W4 /permissive-)
-    target_compile_options(mem_01_02 PRIVATE /W4 /permissive-)
-    target_compile_options(mem_01_03 PRIVATE /W4 /permissive-)
-endif()
+add_exercise(int_02 integration/MEM_objects_memory/int_02_object_routes.cpp)
