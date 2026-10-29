@@ -11,6 +11,18 @@ add_executable(
     cpp/MEM_objects_memory/01_objects_storage/mem_01_01_objects.cpp
 )
 
+ add_executable(
+    mem_01_02
+    cpp/MEM_objects_memory/01_objects_storage/mem_01_02_objects.cpp
+)
+
+add_executable(
+    mem_01_03
+    cpp/MEM_objects_memory/01_objects_storage/mem_01_03_optimization.cpp
+)
+
 if(MSVC)
     target_compile_options(mem_01_01 PRIVATE /W4 /permissive-)
+    target_compile_options(mem_01_02 PRIVATE /W4 /permissive-)
+    target_compile_options(mem_01_03 PRIVATE /W4 /permissive-)
 endif()
