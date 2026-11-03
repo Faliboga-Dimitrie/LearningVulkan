@@ -19,4 +19,12 @@ add_exercise(mem_01_03 cpp/MEM_objects_memory/01_objects_storage/mem_01_03_optim
 add_exercise(mem_01_04 cpp/MEM_objects_memory/01_objects_storage/mem_01_04_storage_durations.cpp)
 add_exercise(mem_01_05 cpp/MEM_objects_memory/01_objects_storage/mem_01_05_scope_storage_lifetime.cpp)
 
+add_exercise(mem_02_01 cpp/MEM_objects_memory/02_object_lifetime/mem_02_01_lifetime.cpp)
+add_exercise(mem_02_02 cpp/MEM_objects_memory/02_object_lifetime/mem_02_02_construction_order.cpp)
+add_exercise(mem_02_03 cpp/MEM_objects_memory/02_object_lifetime/mem_02_03_return_local_address.cpp)
+add_exercise(mem_02_04 cpp/MEM_objects_memory/02_object_lifetime/mem_02_04_dangling_vs_nullptr.cpp)
+add_exercise(mem_02_05 cpp/MEM_objects_memory/02_object_lifetime/mem_02_05_temporary_lifetime.cpp)
+add_exercise(mem_02_06 cpp/MEM_objects_memory/02_object_lifetime/mem_02_06_exception_unwinding.cpp)
+add_exercise(mem_02_07 cpp/MEM_objects_memory/02_object_lifetime/mem_02_07_placement_new.cpp)
+
 add_exercise(int_02 integration/MEM_objects_memory/int_02_object_routes.cpp)
