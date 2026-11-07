@@ -27,4 +27,9 @@ add_exercise(mem_02_05 cpp/MEM_objects_memory/02_object_lifetime/mem_02_05_tempo
 add_exercise(mem_02_06 cpp/MEM_objects_memory/02_object_lifetime/mem_02_06_exception_unwinding.cpp)
 add_exercise(mem_02_07 cpp/MEM_objects_memory/02_object_lifetime/mem_02_07_placement_new.cpp)
 
+add_exercise(mem_03_01 cpp/MEM_objects_memory/03_object_relationships/mem_03_01_aliasing.cpp)
+add_exercise(mem_03_02 cpp/MEM_objects_memory/03_object_relationships/mem_03_02_subobjects.cpp)
+add_exercise(mem_03_03 cpp/MEM_objects_memory/03_object_relationships/mem_03_03_triviality.cpp)
+add_exercise(mem_03_04 cpp/MEM_objects_memory/03_object_relationships/mem_03_04_undefined_behavior.cpp)
+
 add_exercise(int_02 integration/MEM_objects_memory/int_02_object_routes.cpp)
