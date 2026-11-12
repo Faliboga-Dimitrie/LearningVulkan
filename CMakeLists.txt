@@ -5,13 +5,19 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+
 function(add_exercise target source)
     add_executable(${target} "${source}")
 
     if(MSVC)
-        target_compile_options(${target} PRIVATE /W4 /permissive-)
+        target_compile_options(${target} PRIVATE
+            /W4
+            /permissive-
+            $<$<CONFIG:Debug>:/JMC>
+        )
     endif()
 endfunction()
+
 
 add_exercise(mem_01_01 cpp/MEM_objects_memory/01_objects_storage/mem_01_01_objects.cpp)
 add_exercise(mem_01_02 cpp/MEM_objects_memory/01_objects_storage/mem_01_02_objects.cpp)
